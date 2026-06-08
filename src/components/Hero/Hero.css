@@ -1,0 +1,62 @@
+.hero {
+  min-height: 100vh;
+
+  /* Background Image */
+  background-image: url("../../assets/laptop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+/* Dark Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(2px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 5rem;
+}
+
+.hero h1 span {
+  color: #8b5cf6;
+}
+
+.animated-role {
+  color: #8b5cf6;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+
+.hero p {
+  margin-top: 20px;
+  max-width: 600px;
+  color: #d1d5db;
+}
+
+.hero button {
+  margin-top: 25px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 40px;
+  background: #8b5cf6;
+  color: white;
+  cursor: pointer;
+}
