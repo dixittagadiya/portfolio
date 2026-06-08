@@ -1,26 +1,22 @@
 .hero {
   min-height: 100vh;
-
-  /* Background Image */
   background-image: url("../../assets/laptop.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
 
+  padding: 0 20px;
   color: white;
 }
 
-/* Dark Overlay */
 .overlay {
   position: absolute;
   inset: 0;
-
   background: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(2px);
 }
@@ -29,10 +25,13 @@
   position: relative;
   z-index: 2;
   text-align: center;
+  width: 100%;
+  max-width: 900px;
 }
 
 .hero h1 {
   font-size: 5rem;
+  line-height: 1.1;
 }
 
 .hero h1 span {
@@ -46,9 +45,11 @@
 }
 
 .hero p {
-  margin-top: 20px;
+  margin: 20px auto 0;
   max-width: 600px;
   color: #d1d5db;
+  line-height: 1.8;
+  font-size: 1.1rem;
 }
 
 .hero button {
@@ -59,4 +60,68 @@
   background: #8b5cf6;
   color: white;
   cursor: pointer;
+  font-size: 16px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .animated-role {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    max-width: 500px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 15px;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .animated-role {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .hero button {
+    width: 180px;
+    padding: 12px 20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .animated-role {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .hero button {
+    width: 160px;
+    font-size: 14px;
+  }
 }
