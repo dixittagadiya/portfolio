@@ -1,11 +1,6 @@
 .skills {
   padding: 120px 8%;
-  background:
-    radial-gradient(
-      circle at top,
-      #0f172a,
-      #050816
-    );
+  background: rgb(5, 8, 22);
   color: white;
 }
 
