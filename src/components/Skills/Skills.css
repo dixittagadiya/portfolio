@@ -6,19 +6,14 @@
 
 .skills-title {
   text-align: center;
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 15px;
+  font-size: 3rem;
+  font-weight: 700;
 
-  background: linear-gradient(
-    90deg,
-    #8b5cf6,
-    #ec4899,
-    #60a5fa
-  );
-
+  background: #8b5cf6;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  margin-bottom: 15px;
 }
 
 .skills-subtitle {
